@@ -1,31 +1,25 @@
-using System.Collections;
 using System.Collections.Generic;
+using System.Collections;
 using UnityEngine;
-
-public enum BoxType
-{
-    Classic,
-}
 
 [System.Serializable]
 public class Vegetables
 {
-    public List<Transform> VegetablesSpoiledSprite = new List<Transform>();
-    public List<Transform> VegetablesSprite = new List<Transform>();
+    public List<Sprite> VegetablesSpoiledSprite = new List<Sprite>();
+    public List<Sprite> VegetablesSprite = new List<Sprite>();
 }
 
 [System.Serializable]
 public class Products
 {
-    public List<Transform> ProductSpoiledSprite = new List<Transform>();
-    public List<Transform> ProductSprite = new List<Transform>();
+    public List<Sprite> ProductSpoiledSprite = new List<Sprite>();
+    public List<Sprite> ProductSprite = new List<Sprite>();
 }
-
 
 [CreateAssetMenu(menuName = "SpriteFood", fileName = "Food")]
 public class ScriptableObjectProduct : ScriptableObject
 {
     public List<Sprite> TaskList = new List<Sprite>();
-    public List<Vegetables> VegetablesSprites;
-    public List<Products> ProductsSprites;
+    public Vegetables VegetablesSprites;
+    public Products ProductsSprites;
 }

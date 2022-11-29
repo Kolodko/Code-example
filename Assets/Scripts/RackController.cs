@@ -1,18 +1,18 @@
-using System.Collections;
 using System.Collections.Generic;
+using System.Collections;
 using UnityEngine;
 
 public class RackController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private List<Transform> _spawnPoints = new List<Transform>();
+    [SerializeField] private ProductController _productController;
 
-    // Update is called once per frame
-    void Update()
+    private void SpawnRackProduct()
     {
-        
+        for (int i = 0; i < _spawnPoints.Count; i++)
+        {
+            ProductController clone = Instantiate(_productController, _spawnPoints[i].position, _spawnPoints[i].rotation);
+            clone.transform.parent = _spawnPoints[i].transform;
+        }
     }
 }
