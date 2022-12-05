@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: Food
   m_EditorClassIdentifier: 
   TaskList:
-  - {fileID: 21300000, guid: 4f6fdcc6381be8d43b18fc0015fe1146, type: 3}
-  - {fileID: 21300000, guid: a076707726604ac4cb07388c60b027dd, type: 3}
-  - {fileID: 21300000, guid: 87e855afbbdb4214d87e24fcbc3e92f6, type: 3}
+  - {fileID: 21300000, guid: e96ab8108af77fb47a41ac59468a418a, type: 3}
+  - {fileID: 21300000, guid: 7e34f824bd27b1243bc44679fc6ece06, type: 3}
   - {fileID: 21300000, guid: a2ee9b1bc62b65f41930f26496c2ddd9, type: 3}
-  - {fileID: 21300000, guid: a2ee9b1bc62b65f41930f26496c2ddd9, type: 3}
+  - {fileID: 21300000, guid: 9b5688ae034c764429f8a3b3f5ca17c9, type: 3}
+  - {fileID: 21300000, guid: b2f84731f4237e34d84d63f368cc0da2, type: 3}
   VegetablesSprites:
     VegetablesSpoiledSprite:
     - {fileID: 21300000, guid: 18a31b4b352c0f7408fee3bbec59f062, type: 3}
@@ -68,10 +68,6 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 4c0e89e8dd0eec64786902bed0609967, type: 3}
     - {fileID: 21300000, guid: 2178d243f7cbdff42bcf432516375d37, type: 3}
     - {fileID: 21300000, guid: 99198766143d6f544a78c1a8aceb30b5, type: 3}
-    - {fileID: 21300000, guid: a8046f94cff45d94c807c9072b7f3c46, type: 3}
-    - {fileID: 21300000, guid: 162a2523d7db952488824d5974620c48, type: 3}
-    - {fileID: 21300000, guid: 2479300241a409c44ae60154d50af134, type: 3}
-    - {fileID: 21300000, guid: 3ebd0db50d1b39648811553facce0476, type: 3}
     ProductSprite:
     - {fileID: 21300000, guid: b2f84731f4237e34d84d63f368cc0da2, type: 3}
     - {fileID: 21300000, guid: af7b670a772b55340b69e7acd9e5a484, type: 3}
@@ -88,7 +84,7 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 384f81ab2d4539942b8ab6b4b5dc24de, type: 3}
     - {fileID: 21300000, guid: d3fa0a591136bf346ba52f28011096ce, type: 3}
     - {fileID: 21300000, guid: 52cbd5919188525489e368aa70e099fe, type: 3}
-    - {fileID: 21300000, guid: 6314350bb7e7a5f48a77af21b8298e1f, type: 3}
-    - {fileID: 21300000, guid: 1cb287709837c1346a032ea526983223, type: 3}
-    - {fileID: 21300000, guid: c78288ca4e64d01419b7f58ce321b552, type: 3}
-    - {fileID: 21300000, guid: fbca923544d94174d8e2bcdde5d30632, type: 3}
+  mixRackArray: 0200000004000000030000000100000000000000
+  Racknumbers: 0200000004000000030000000100000000000000
+  mixArray: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e000000
+  numbers: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e000000

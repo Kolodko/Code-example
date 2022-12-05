@@ -1,18 +1,34 @@
 using System.Collections.Generic;
 using System.Collections;
 using UnityEngine;
+using System;
 
 public class ButtonFood : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public ColliderButton Button => _button;
+    public ColliderButton _button;
+
+    public bool TaskFood;
+    public bool DefaultFood;
+
+    public void Init(bool active, Action onClick)
     {
-        
+        _button.OnClick.RemoveAllListeners();
+        _button.OnClick.AddListener(() => onClick?.Invoke());
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SetCollider(bool enabled)
     {
-        
+        _button.enabled = enabled;
+    }
+
+    public void TaskFoodAnimation()
+    {
+
+    }
+
+    public void DefaultFoodAnimation()
+    {
+
     }
 }
