@@ -21,7 +21,7 @@ public class ProductController : MonoBehaviour
     //ѕодставл€ем нужные спрайты на обычные продукты
     public void SetDefaultProduct(int count)
     {
-        int random = MixList.Instance.Scriptable.mixArray[count];
+        int random = MixList.Instance.Scriptable.MixList[count];
         for (int i = 0; i < 4; i++)
         {
             _buttonFood[i].GetComponent<SpriteRenderer>().sprite = MixList.Instance.Scriptable.VegetablesSprites.VegetablesSprite[random];

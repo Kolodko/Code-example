@@ -22,8 +22,8 @@ public class ScriptableObjectProduct : ScriptableObject
     public List<Sprite> TaskList = new List<Sprite>();
     public Vegetables VegetablesSprites;
     public Products ProductsSprites;
-    public List<int> mixRackArray = new List<int>();
+    public List<int> MixRackList = new List<int>();
     public List<int> Racknumbers = new List<int>();
-    public List<int> mixArray = new List<int>();
-    public List<int> numbers = new List<int>();
+    public List<int> MixList = new List<int>();
+    public List<int> Numbers = new List<int>();
 }

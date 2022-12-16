@@ -11,13 +11,13 @@ public class ProductTaskController : MonoBehaviour
     {
         for (int i = 0; i < 2; i++)
         {
-            _taskProdyct[i].sprite = MixList.Instance.Scriptable.VegetablesSprites.VegetablesSprite[MixList.Instance.Scriptable.mixArray[i]];
+            _taskProdyct[i].sprite = MixList.Instance.Scriptable.VegetablesSprites.VegetablesSprite[MixList.Instance.Scriptable.MixList[i]];
             MixList.Instance.Scriptable.TaskList[i] = _taskProdyct[i].sprite;
-            MixList.Instance.Scriptable.mixArray.RemoveAt(i);
+            MixList.Instance.Scriptable.MixList.RemoveAt(i);
         }
         for (int i = 2; i < 5; i++)
         {
-            _taskProdyct[i].sprite = MixList.Instance.Scriptable.ProductsSprites.ProductSprite[MixList.Instance.Scriptable.mixArray[i]];
+            _taskProdyct[i].sprite = MixList.Instance.Scriptable.ProductsSprites.ProductSprite[MixList.Instance.Scriptable.MixList[i]];
             MixList.Instance.Scriptable.TaskList[i] = _taskProdyct[i].sprite;
         }
     }

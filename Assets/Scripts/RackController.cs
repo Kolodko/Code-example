@@ -14,7 +14,7 @@ public class RackController : MonoBehaviour
         MixList.Instance.MixRack();
         for (int i = 0; i < 2; i++)
         {
-            int number = MixList.Instance.Scriptable.mixRackArray[i];
+            int number = MixList.Instance.Scriptable.MixRackList[i];
             ProductController clone = Instantiate(_productController, _spawnPoints[number].position, _spawnPoints[number].rotation);
             clone.transform.parent = _spawnPoints[number].transform;
             clone.SetTaskProduct(i);

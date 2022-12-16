@@ -24,13 +24,13 @@ public class MixList : MonoBehaviour
     //Миксуем случайные цифры для спавна овощей и продуктов
     public void Mix()
     {
-        Scriptable.mixArray = Mix(Scriptable.numbers);
+        Scriptable.MixList = Mix(Scriptable.Numbers);
     }
 
     //Миксуем случайные цифры для точек на полках
     public void MixRack()
     {
-        Scriptable.mixRackArray = Mix(Scriptable.Racknumbers);
+        Scriptable.MixRackList = Mix(Scriptable.Racknumbers);
     }
 
     List<int> Mix(List<int> num)
@@ -48,13 +48,13 @@ public class MixList : MonoBehaviour
     //Восстанавливаем скриптейбл список после выхода из игры
     private void OnApplicationQuit()
     {
-        for (int j = 0; j < Scriptable.numbers.Count; j++)
-        { Scriptable.numbers.RemoveAt(j); }
+        for (int j = 0; j < Scriptable.Numbers.Count; j++)
+        { Scriptable.Numbers.RemoveAt(j); }
         for (int i = 0; i < 15; i++)
         {
-            if (Scriptable.numbers.Count < 15)
-                Scriptable.numbers.Add(i);
-            Scriptable.numbers[i] = i;
+            if (Scriptable.Numbers.Count < 15)
+                Scriptable.Numbers.Add(i);
+            Scriptable.Numbers[i] = i;
         }
     }
 }
